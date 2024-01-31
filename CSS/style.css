@@ -1,34 +1,13 @@
 body{
-    background-color: #E7dcdf;
+    background-color:  #E8B69F;
     color:#948368;
     margin: 0 auto;
 }
 
-.container {  display: grid;
-    grid-template-columns: 1.5fr 0.5fr 1.4fr 0.6fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Banner Banner Banner Banner Banner"
-      "photo photo photo photo photo"
-      "welcome experience experience skills skills"
-      "welcome experience experience skills skills"
-      
-  }
-
-  /* Card layout creator, I named each of divs differenlty, it just made it easier to see */
-
-.welcome, .skills, .experience {
-    border: 2px solid #ccc; /* Border color */
-    border-radius: 10px; /* Border radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
-    background-color: rgb(133, 108, 108); /* Background color */
-    padding: 20px; /* Padding inside the card */
-    margin: 0px 0; /* Margin to create space between cards */
-    
-  }
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
   .card{
 
@@ -36,41 +15,73 @@ body{
     border-radius: 10px; /* Border radius for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
     background-color: rgb(133, 108, 108); /* Background color */
-    padding: 20px; /* Padding inside the card */
-    margin: 0px 0; /* Margin to create space between cards */
+    border-style:groove;
+        padding: 10px;
+    margin: 10px;
 
   }
+  section {
+    display: block;
+}
+
+  .card dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
   
-  
+.card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+
+}
+
+.card img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+}
   
   
   .Banner { 
-      grid-area: Banner; 
+    
+    background-image: url(/images/YannaBanner.png);
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Cover the entire background, maintaining aspect ratio */
+    background-position: center center; /* Center the background image */
+    padding: 280px;
+    
 
+    }
+
+
+    .about {
+        padding: 20px;
+    }
+  
+    .about>img {
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    h3 {
+        text-align: center;
 
     }
   
-  .photo { 
-      grid-area: photo; 
-      display:flex;
-      justify-content: center;
-      height: 200px;
-      margin-left: 220px;
-      align-items: center;
-      flex-direction: column;
-      
-         
-    }
   
-  .welcome { 
-      grid-area: welcome;
-      color: #fff
-     }
-
- .welcomeImage {
-        margin-left: 80px;
-        border: 2px solid rgb(133, 108, 108); 
-    }
 
 #contactheading {
     font-family: 'Cedarville Cursive', cursive;
@@ -99,30 +110,19 @@ body{
     color: #fff;
     font-size: 18px;
   }
-  
-  .skills { 
-      grid-area: skills;
-      color: #fff;
-     }
 
- .skillsImage {
-        margin-left: 90px;
-    }
+ 
   
-  .experience { 
-      grid-area: experience;
-      color: #fff;
-
-   }
-   .leaderImage {
-    margin-left: 150px;
-   }
+  
+  
+  
 
    hr {
-    height: 2px;
-    border: none;
-    background: linear-gradient(to right, #fff, #c9b1ce, transparent);
-    margin: 20px 0;
+    border-style: dashed;
+    border-color: rgb(133, 108, 108);
+    border-width: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
 
    }
 
@@ -130,23 +130,19 @@ body{
   
   .foot {
        
-    background-color: rgb(133, 108, 108); /* Set the background color to a dark color */
-    padding: 1px; /* Add some padding to the navigation bar */
-    color: #fff; /* Set text color to white, assuming a dark background */
-    display: flex; /* Make the nav a flex container */
-    justify-content: center; /* Justify the children to the center */
-    width: 1580px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(133, 108, 108);
+    border-width: 4px;
 
      }
   
 
 .navbar {
-    background-color: rgb(133, 108, 108); /* Set the background color to a dark color */
-    padding: 1px; /* Add some padding to the navigation bar */
-    color: #fff; /* Set text color to white, assuming a dark background */
-    display: flex; /* Make the nav a flex container */
-    justify-content: flex-end; /* Justify the children to the right */
-    width: 1580px;
+    display: flex;
+    justify-content: right;
+    background-color:rgb(133, 108, 108);
+    border-width: 4px;
   }
 
   .navbar a{
