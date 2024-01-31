@@ -1,0 +1,202 @@
+body{
+    background-color:  #E8B69F;
+    color:#948368;
+    margin: 0 auto;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+  .card{
+
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    background-color: rgb(133, 108, 108); /* Background color */
+    border-style:groove;
+        padding: 10px;
+    margin: 10px;
+
+  }
+  section {
+    display: block;
+}
+
+  .card dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+  
+.card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+
+}
+
+.card img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+}
+  
+  
+  .Banner { 
+    
+    background-image: url(/images/YannaBanner.png);
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Cover the entire background, maintaining aspect ratio */
+    background-position: center center; /* Center the background image */
+    padding: 280px;
+    
+
+    }
+
+
+    .about {
+        padding: 20px;
+    }
+  
+    .about>img {
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+
+    h3 {
+        text-align: center;
+
+    }
+  
+  
+
+#contactheading {
+    font-family: 'Cedarville Cursive', cursive;
+    color: #fff;
+    font-size: 40px;
+
+    }
+
+  #heading {
+    font-family: 'Cedarville Cursive', cursive;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  #entryHeading {
+
+    font-family: 'Cedarville Cursive', cursive;
+    color: #fff;
+    font-size: 80px;
+    margin-top: 0px;
+    
+
+  }
+  #writing{
+    font-family: 'Shadows Into Light', cursive;
+    color: #fff;
+    font-size: 18px;
+  }
+
+ 
+  
+  
+  
+  
+
+   hr {
+    border-style: dashed;
+    border-color: rgb(133, 108, 108);
+    border-width: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+   }
+
+
+  
+  .foot {
+       
+    display: flex;
+    justify-content: center;
+    background-color:rgb(133, 108, 108);
+    border-width: 4px;
+
+     }
+  
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    background-color:rgb(133, 108, 108);
+    border-width: 4px;
+  }
+
+  .navbar a{
+      color: bisque;
+      text-decoration: none;
+  }
+  .navbar a:hover{
+      color: white;
+      text-decoration: underline;
+  }
+  a {
+      color:white;
+      font-family: 'Cedarville Cursive', cursive;
+      text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    color: rgb(158, 136, 108);
+  }
+
+  
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content: center; /* Center the content horizontally */
+    margin: 20px; /* Add margin around the container */
+}
+
+/* Additional styling for the form inside the one-col container */
+.one-col form {
+    max-width: 400px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form within the container */
+    padding: 20px; /* Add padding to the form */
+    border: 2px solid #ccc; /* Add border for a card-like appearance */
+    border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    background-color: rgb(133, 108, 108); /* Background color for the form */
+    color: #fff; /* Text color for the form */
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+        /* Additional styles for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    body {
+        font-size: 14px;
+    }
+}
+
