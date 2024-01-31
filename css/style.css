@@ -56,7 +56,7 @@ body{
   
   .Banner { 
     
-    background-image: url(/images/YannaBanner.png);
+    background-image: url(images/YannaBanner.png);
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-size: cover; /* Cover the entire background, maintaining aspect ratio */
     background-position: center center; /* Center the background image */
